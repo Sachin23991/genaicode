@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillForge AI - Complete Career Transformation Platform</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Enhanced Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-3d">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <span>SkillForge AI</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#demo">Demo</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact" class="login-btn">Get Started</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Enhanced Hero Section with 3D Elements -->
+    <section class="hero-section">
+        <div class="hero-background">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+                <div class="shape shape-5"></div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Transform Your Career with
+                        <span class="gradient-text-3d">AI-Powered Intelligence</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Complete career transformation platform combining AI skill analysis, 
+                        professional resume building, personalized career guidance, and 
+                        real-time job market insights all in one powerful solution.
+                    </p>
+                    
+                    <div class="feature-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-robot"></i>
+                            <span>AI Skill Analysis</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Resume Builder</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Career Roadmap</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Job Matching</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-buttons">
+                        <button class="cta-primary-3d" onclick="startJourney()">
+                            <i class="fas fa-rocket"></i>
+                            Start Your Journey
+                        </button>
+                        <button class="cta-secondary-3d" onclick="watchDemo()">
+                            <i class="fas fa-play"></i>
+                            Watch Demo
+                        </button>
+                    </div>
+
+                    <div class="trust-indicators">
+                        <div class="stat-item">
+                            <div class="stat-number-3d" data-target="50000">0</div>
+                            <div class="stat-label">Careers Transformed</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number-3d" data-target="95">0</div>
+                            <div class="stat-label">Success Rate %</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number-3d" data-target="1000">0</div>
+                            <div class="stat-label">Partner Companies</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual-3d">
+                    <div class="main-dashboard">
+                        <div class="dashboard-header">
+                            <div class="user-avatar">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" alt="User">
+                            </div>
+                            <div class="user-info">
+                                <h4>John Developer</h4>
+                                <p>Full Stack Engineer</p>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-radar">
+                            <canvas id="skillChart" width="200" height="200"></canvas>
+                        </div>
+                        
+                        <div class="progress-cards">
+                            <div class="progress-card">
+                                <div class="card-header">
+                                    <i class="fab fa-react"></i>
+                                    <span>React.js</span>
+                                </div>
+                                <div class="progress-bar-3d">
+                                    <div class="progress-fill" data-progress="85"></div>
+                                </div>
+                                <span class="progress-text">85%</span>
+                            </div>
+                            
+                            <div class="progress-card">
+                                <div class="card-header">
+                                    <i class="fab fa-node-js"></i>
+                                    <span>Node.js</span>
+                                </div>
+                                <div class="progress-bar-3d">
+                                    <div class="progress-fill" data-progress="78"></div>
+                                </div>
+                                <span class="progress-text">78%</span>
+                            </div>
+                            
+                            <div class="progress-card">
+                                <div class="card-header">
+                                    <i class="fas fa-database"></i>
+                                    <span>MongoDB</span>
+                                </div>
+                                <div class="progress-bar-3d">
+                                    <div class="progress-fill" data-progress="92"></div>
+                                </div>
+                                <span class="progress-text">92%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="floating-elements">
+                        <div class="floating-card card-ai">
+                            <i class="fas fa-brain"></i>
+                            <span>AI Analysis</span>
+                        </div>
+                        <div class="floating-card card-resume">
+                            <i class="fas fa-file-pdf"></i>
+                            <span>Smart Resume</span>
+                        </div>
+                        <div class="floating-card card-jobs">
+                            <i class="fas fa-search"></i>
+                            <span>Job Matching</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comprehensive Features Section -->
+    <section class="features-section" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title-3d">Complete Career Ecosystem</h2>
+                <p class="section-subtitle">Everything you need to transform your career in one intelligent platform</p>
+            </div>
+
+            <div class="features-grid-3d">
+                <!-- AI Skill Analysis -->
+                <div class="feature-card-3d" data-tilt>
+                    <div class="feature-icon-3d">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI-Powered Skill Analysis</h3>
+                    <p>Advanced machine learning algorithms analyze your technical and soft skills, identifying strengths and growth areas with precision.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> 360° Skill Assessment</li>
+                        <li><i class="fas fa-check"></i> Industry Benchmarking</li>
+                        <li><i class="fas fa-check"></i> Skill Gap Analysis</li>
+                        <li><i class="fas fa-check"></i> Growth Recommendations</li>
+                    </ul>
+                    <div class="feature-demo">
+                        <div class="demo-visual">
+                            <div class="skill-circle" data-percentage="85">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resume Builder -->
+                <div class="feature-card-3d" data-tilt>
+                    <div class="feature-icon-3d">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Intelligent Resume Builder</h3>
+                    <p>Upload your existing resume or start fresh. Our AI creates ATS-optimized, professionally designed resumes tailored to your target roles.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> ATS Optimization</li>
+                        <li><i class="fas fa-check"></i> Industry Templates</li>
+                        <li><i class="fas fa-check"></i> Content Suggestions</li>
+                        <li><i class="fas fa-check"></i> Multi-format Export</li>
+                    </ul>
+                    <div class="feature-demo">
+                        <div class="resume-preview">
+                            <div class="resume-lines">
+                                <div class="line line-title"></div>
+                                <div class="line line-subtitle"></div>
+                                <div class="line line-content"></div>
+                                <div class="line line-content short"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Career Roadmap -->
+                <div class="feature-card-3d" data-tilt>
+                    <div class="feature-icon-3d">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <h3>Personalized Career Roadmap</h3>
+                    <p>Get detailed career paths with learning milestones, certification recommendations, and timeline projections for your goals.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Custom Learning Paths</li>
+                        <li><i class="fas fa-check"></i> Milestone Tracking</li>
+                        <li><i class="fas fa-check"></i> Industry Insights</li>
+                        <li><i class="fas fa-check"></i> Progress Analytics</li>
+                    </ul>
+                    <div class="feature-demo">
+                        <div class="roadmap-visual">
+                            <div class="road-step completed">1</div>
+                            <div class="road-step current">2</div>
+                            <div class="road-step">3</div>
+                            <div class="road-step">4</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Job Matching -->
+                <div class="feature-card-3d" data-tilt>
+                    <div class="feature-icon-3d">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Smart Job Matching</h3>
+                    <p>Real-time job recommendations based on your skills, preferences, and career goals with compatibility scoring.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> AI-Powered Matching</li>
+                        <li><i class="fas fa-check"></i> Salary Insights</li>
+                        <li><i class="fas fa-check"></i> Company Culture Fit</li>
+                        <li><i class="fas fa-check"></i> Application Tracking</li>
+                    </ul>
+                    <div class="feature-demo">
+                        <div class="job-cards">
+                            <div class="job-card">
+                                <div class="match-score">95%</div>
+                                <div class="job-title">Senior Developer</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Learning Platform -->
+                <div class="feature-card-3d" data-tilt>
+                    <div class="feature-icon-3d">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Integrated Learning Hub</h3>
+                    <p>Access curated courses, tutorials, and certifications aligned with your career goals and skill gaps.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Curated Content</li>
+                        <li><i class="fas fa-check"></i> Progress Tracking</li>
+                        <li><i class="fas fa-check"></i> Certificates</li>
+                        <li><i class="fas fa-check"></i> Peer Learning</li>
+                    </ul>
+                </div>
+
+                <!-- Portfolio Builder -->
+                <div class="feature-card-3d" data-tilt>
+                    <div class="feature-icon-3d">
+                        <i class="fas fa-folder-open"></i>
+                    </div>
+                    <h3>Dynamic Portfolio Creator</h3>
+                    <p>Showcase your projects, achievements, and skills in a professional portfolio that adapts to different industries.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Project Showcase</li>
+                        <li><i class="fas fa-check"></i> Custom Themes</li>
+                        <li><i class="fas fa-check"></i> Social Integration</li>
+                        <li><i class="fas fa-check"></i> Analytics Dashboard</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Demo Section -->
+    <section class="demo-section" id="demo">
+        <div class="container">
+            <div class="demo-content">
+                <div class="demo-text">
+                    <h2 class="demo-title-3d">Experience the Future of Career Development</h2>
+                    <p class="demo-description">
+                        See how our AI-powered platform transforms career guidance through 
+                        intelligent analysis, personalized recommendations, and comprehensive support.
+                    </p>
+                    
+                    <div class="demo-features">
+                        <div class="demo-feature">
+                            <div class="demo-icon">
+                                <i class="fas fa-upload"></i>
+                            </div>
+                            <div class="demo-info">
+                                <h4>Upload Your Resume</h4>
+                                <p>Drag and drop your current resume for instant analysis</p>
+                            </div>
+                        </div>
+                        
+                        <div class="demo-feature">
+                            <div class="demo-icon">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <div class="demo-info">
+                                <h4>AI Processing</h4>
+                                <p>Our algorithms analyze skills, experience, and potential</p>
+                            </div>
+                        </div>
+                        
+                        <div class="demo-feature">
+                            <div class="demo-icon">
+                                <i class="fas fa-chart-pie"></i>
+                            </div>
+                            <div class="demo-info">
+                                <h4>Get Insights</h4>
+                                <p>Receive detailed reports and personalized recommendations</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="demo-btn-3d" onclick="startDemo()">
+                        <i class="fas fa-play"></i>
+                        Try Interactive Demo
+                    </button>
+                </div>
+
+                <div class="demo-visual">
+                    <div class="laptop-mockup">
+                        <div class="laptop-screen">
+                            <div class="demo-interface">
+                                <div class="upload-area">
+                                    <div class="upload-icon">
+                                        <i class="fas fa-cloud-upload-alt"></i>
+                                    </div>
+                                    <p>Drop your resume here</p>
+                                    <div class="upload-progress">
+                                        <div class="progress-line"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="analysis-results">
+                                    <div class="result-card">
+                                        <h4>Skill Match</h4>
+                                        <div class="percentage">89%</div>
+                                    </div>
+                                    <div class="result-card">
+                                        <h4>ATS Score</h4>
+                                        <div class="percentage">92%</div>
+                                    </div>
+                                    <div class="result-card">
+                                        <h4>Job Fit</h4>
+                                        <div class="percentage">85%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title-3d">Ready to Transform Your Career?</h2>
+                <p class="cta-description">
+                    Join thousands of professionals who have accelerated their careers with our AI-powered platform. 
+                    Start your journey today and unlock your full potential.
+                </p>
+                
+                <div class="cta-buttons">
+                    <button class="cta-main-3d" onclick="startAssessment()">
+                        <i class="fas fa-rocket"></i>
+                        Start Free Assessment
+                    </button>
+                    <button class="cta-secondary-outline" onclick="contactUs()">
+                        <i class="fas fa-comments"></i>
+                        Talk to Expert
+                    </button>
+                </div>
+                
+                <div class="cta-guarantee">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>30-day money-back guarantee • No credit card required</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-3d">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <span>SkillForge AI</span>
+                    </div>
+                    <p>Transforming careers through AI-powered intelligence and personalized guidance.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Platform</h4>
+                        <a href="#">Features</a>
+                        <a href="#">Pricing</a>
+                        <a href="#">API</a>
+                        <a href="#">Integrations</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>Resources</h4>
+                        <a href="#">Documentation</a>
+                        <a href="#">Career Guides</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Community</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>Support</h4>
+                        <a href="#">Help Center</a>
+                        <a href="#">Contact Us</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 SkillForge AI. All rights reserved.</p>
+                <div class="footer-badges">
+                    <span class="badge">🔒 SOC 2 Certified</span>
+                    <span class="badge">🛡️ GDPR Compliant</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script src="script.js"></script>
